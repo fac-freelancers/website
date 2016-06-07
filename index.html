@@ -1,1 +1,60 @@
-<!DOCTYPE html><html><head><title>FACtree</title><link rel="stylesheet" href="./main.css"></head><body><nav><img src="http://www.clipartbest.com/cliparts/niB/Xqb/niBXqbdXT.jpeg"/><a>nav item goes here</a></nav><main><section class="intro"><h1>FACTREE</h1><h2>WE BUILD WEB APPS</h2></section><section class="missionStatement"><h2>MISSION STATEMENT</h2></section><section class="howWeWork"><h2>HOW WE WORK</h2></section><section class="portfolio"><h2>PORTFOLIO</h2></section><section class="contact"><h2>CONTACT</h2></section></main><footer><p>footer content goes here</p></footer></body></html>
+<!doctype html>
+<html>
+  <head>
+    <title>FACtree</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./smooth-scroll.js"></script>
+  </head>
+  <body>
+    <nav>
+  <img src="http://www.clipartbest.com/cliparts/niB/Xqb/niBXqbdXT.jpeg" />
+  <ul>
+    <li><a data-scroll href="#home">home</a></li>
+    <li><a data-scroll href="#how-we-work">how we work</a></li>
+    <li><a data-scroll href="#portfolio">portfolio</a></li>
+    <li><a data-scroll href="#contact">contact</a></li>
+  </ul>
+</nav
+
+    <main>
+  <span id="home"></span>
+  <section class="intro" id="home">
+    <h1> FACTREE </h1>
+    <h2> WE BUILD WEB APPS </h2>
+  </section>
+
+  <section class="missionStatement">
+    <h2> MISSION STATEMENT </h2>
+  </section>
+
+  <span id="how-we-work"></span>
+  <section class="howWeWork">
+    <h2> HOW WE WORK </h2>
+  </section>
+
+  <span id="portfolio"></span>
+  <section class="portfolio">
+    <h2> PORTFOLIO </h2>
+  </section>
+
+  <span id="contact"></span>
+  <section class="contact">
+    <h2> CONTACT </h2>
+  </section>
+</main>
+
+<script type="text/javascript">
+  smoothScroll.init({
+    speed: 1500,
+    easing: 'easeInOutCubic',
+    offset: 80
+  });
+  console.log('initialising');
+</script>
+    <footer>
+  <p> footer content goes here </p>
+</footer>
+
+  </body>
+</html>
+
