@@ -23,33 +23,33 @@ nav {
   width: 100%;
   height: 80px; /* in px for ensuring smooth scroll stops at the correct point */
   background-color: orange;
-}
 
-nav ul {
-  margin-left: 40%;
-  height: 100%;
-  list-style-type: none;
-}
+  img {
+    height: 100%;
+    float: left;
+  }
 
-nav ul li {
-  width: 20%;
-  border-right: 2px solid #aaa;
-  display: inline;
-  float: left;
-}
+  ul {
+    margin-left: 40%;
+    height: 100%;
+    list-style-type: none;
 
-nav ul li a {
-  text-decoration: none;
-  color: #444;
-}
+    li:last-child {
+      border-right: none;
+    }
 
-nav ul li:last-child {
-  border-right: none;
-}
+    li {
+      width: 20%;
+      border-right: 2px solid #aaa;
+      display: inline;
+      float: left;
 
-nav img {
-  height: 100%;
-  float: left;
+      a {
+        text-decoration: none;
+        color: #444;
+      }
+    }
+  }
 }
 
 #home {
