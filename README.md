@@ -1,16 +1,6 @@
-# freelance website
+# Freelance website
 
 A website for the founders and coders freelance agency
-
-### todo:
-
-Sections:
-
-+ Landing Section (illustration and description?)
-+ Contact Section
-+ Our work / testimonials
-+ Our service (what we can do for you)
-+ Team
 
 ### Quick start
 
@@ -50,7 +40,7 @@ Or do it manually with: `open index.html`
 
 * Before you start any work, find an issue to work on or create one if you see an improvement to be made
 
-* When you start add the 'in-progress' label to an issue and site the branch you will be working on
+* When you start working on an issue add the 'in-progress' label to an issue and site the branch you will be working on
 
 * Make regular commits to your 'in-progress' branch
 
