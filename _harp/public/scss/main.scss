@@ -58,16 +58,36 @@ nav {
 
 section {
   height: 20%;
+
+  h4 {
+    padding: 4%;
+  }
+
+  p {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+  }
 }
 
 footer {
-  margin-top: 10%;
-  height: 10%;
+  margin-top: 15%;
+  height: 5%;
   background-color: lightblue;
+
+  p {
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
 }
 
 h1 {
   font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 h3 {
