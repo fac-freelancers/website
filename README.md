@@ -1,16 +1,6 @@
-# freelance website
+# Freelance website
 
 A website for the founders and coders freelance agency
-
-### todo:
-
-Sections:
-
-+ Landing Section (illustration and description?)
-+ Contact Section
-+ Our work / testimonials
-+ Our service (what we can do for you)
-+ Team
 
 ### Quick start
 
@@ -42,6 +32,16 @@ The files to edit can all be found in the `_harp` and the `_harp/public` directo
 
 After developing run the build.sh script in the `_harp` directory to compile your changes, run:
 
-`_harp/build.sh`
+`_harp/build.sh` (this will open your index.html in browser)
 
-View them with: `open index.html`
+Or do it manually with: `open index.html`
+
+##### Rules for developing
+
+* Before you start any work, find an issue to work on or create one if you see an improvement to be made
+
+* When you start working on an issue add the 'in-progress' label to an issue and site the branch you will be working on
+
+* Make regular commits to your 'in-progress' branch
+
+* Only make a pull request to master if it closes an issue
