@@ -1,3 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 520%;
+}
+
+body {
+  height: 100%;
+  font-family: "futura";
+  text-align: center;
+  background: #f4f4f7;
+  color: #444;
+  display: inline;
+}
+
+nav {
+  position: fixed;
+  margin: auto;
+  height: 70px; /* in px for ensuring smooth scroll stops at the correct point */
+  background-color: orange;
+  width: 100%;
+  img {
+    height: 100%;
+    float: left;
+  }
+  ul {
+    margin: 0 70px;
+    height: 100%;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: #444;
+        padding: 0 .625em;
+        font-size: 1.5em;
+        line-height: 70px;
+      } 
+    }
+    li:hover {
+      transition-delay: 0.6s;
+      transition: all 1.2s ease;
+      background-color: red;
+    }
+  }
+}
+
+.liSelected {
+  transition-delay: 0.6s;
+  transition: all 1.2s ease;
+  background-color: red;
+}
+
+main {
+  margin-top: 70px;
+  height: 100%;
+  footer {
+    height: 10%;
+    background-color: lightblue;
+
+    p {
+      float: left;
+      width: 25%;
+      text-align: center;
+    }
+  }
+}
+
+section {
+  padding: 2% 2%;
+  background-color: lightblue;
+}
+
+section:nth-of-type(odd) {
+  background-color: lightgreen;
+}
+
+footer {
+  height: 10%;
+  background-color: lightblue;
+
+  p {
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+}
+
+/*
 html, body {
   width: 100%;
   margin: 0;
@@ -21,7 +118,7 @@ nav {
   position: fixed;
   margin: auto;
   width: 100%;
-  height: 80px; /* in px for ensuring smooth scroll stops at the correct point */
+  height: 80px; in px for ensuring smooth scroll stops at the correct point 
   background-color: orange;
 
   img {
@@ -54,6 +151,9 @@ nav {
 
 #home {
   margin-top: 12%;
+  background-image: url("../img/imgres.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
@@ -94,4 +194,4 @@ h3 {
   font-size: 1em;
   font-weight: 300;
 }
-
+*/
