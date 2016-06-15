@@ -1,9 +1,3 @@
-## WHO WE ARE
+## WHO ARE WE
 
-#### FacTree is a team of web developers who build amazing apps and websites, follow: https://fueled.com/about/ format
-
-(technical ability)
-
-(client relations)
-
-(finished product)
+#### FacTree is a team of web developers who build amazing apps and websites

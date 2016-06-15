@@ -1,3 +1,1 @@
-# Finished Product
-
-more info on finshed product
+We have produced products for a wide range of devices and abilities...
