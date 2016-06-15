@@ -1,1 +1,0 @@
-<p>Technical Content</p>
