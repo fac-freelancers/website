@@ -1,31 +1,41 @@
 <%- partial("../_content/howWeWork/index") %>
 
-<div id="howWeWorkElements">
-  <div id="idea">
+<div id="howWeWorkElContainer">
+  <div id="idea" class="howWeWorkEl">
     <%- partial("./idea") %>
   </div>
 
-  <div id="scoping">
+  <div id="scoping" class="howWeWorkEl">
     <%- partial("./scoping") %>
   </div>
 
-  <div id="build">
+  <div id="build" class="howWeWorkEl">
     <%- partial("./build") %>
   </div>
 
-  <div id="release">
+  <div id="release" class="howWeWorkEl">
     <%- partial("./release") %>
   </div>
 
-  <div id="maintain">
+  <div id="maintain" class="howWeWorkEl">
     <%- partial("./maintain") %>
   </div>
 </div>
 
-<div id="howWeWorkContent">
-  <%- partial("../_content/howWeWork/idea") %>
-  <%- partial("../_content/howWeWork/scoping") %>
-  <%- partial("../_content/howWeWork/build") %>
-  <%- partial("../_content/howWeWork/release") %>
-  <%- partial("../_content/howWeWork/maintain") %>
+<div id="howWeWorkContContainer">
+  <div class="howWeWorkContent">
+    <%- partial("../_content/howWeWork/idea") %>
+  </div>
+  <div class="howWeWorkContent hidden">
+    <%- partial("../_content/howWeWork/scoping") %>
+  </div>
+  <div class="howWeWorkContent hidden">
+    <%- partial("../_content/howWeWork/build") %>
+  </div>
+  <div class="howWeWorkContent hidden">
+    <%- partial("../_content/howWeWork/release") %>
+  </div>
+  <div class="howWeWorkContent hidden">
+    <%- partial("../_content/howWeWork/maintain") %>
+  </div>
 </div>

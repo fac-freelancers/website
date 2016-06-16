@@ -144,16 +144,43 @@ h3 {
     }
   }
 }
+
+#howWeWorkElContainer {
+  position: relative;
+  width: 20%;
+  margin-left: 20%;
+  float: left;
+}
+
 /* prev - w:202px, h: 216px*/
 .howWeWork-elements {
-  /*position: relative;*/
-  width: 101px; 
-  height: 108px;
-  /*margin-left: 10%;*/
+  width: 90.9px; 
+  height: 97.2px;
+}
+
+#howWeWorkContContainer {
+  width: 50%;
+  height: 80%;
 }
 
 .howWeWorkContent {
-  /*position: absolute;*/
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.enlarged {
+  width: 151.5px;
+  height: 162px;
+}
+
+#howWeWorkContContainer {
+  position: relative;
+  float: left;
 }
 
 @-webkit-keyframes spin {
