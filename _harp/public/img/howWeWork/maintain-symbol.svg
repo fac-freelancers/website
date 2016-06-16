@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="202px" height="216px" viewBox="0 0 202 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>maintain-symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="maintain-symbol" sketch:type="MSLayerGroup" transform="translate(3.000000, 3.000000)" stroke="#979797">
+            <ellipse id="Oval-1-Copy-3" stroke-width="6" fill="#DDD6D6" sketch:type="MSShapeGroup" cx="98" cy="105" rx="98" ry="105"></ellipse>
+            <path d="M82,44.5333043 C67.3062811,48.6385118 57,58.2266977 57,69.4000871 C57,80.4463052 67.0730118,89.9431988 81.5,94.1245778 L81.5,156.465123 C81.5,161.445343 85.5274641,165.466696 90.4955928,165.466696 L105.504407,165.466696 C110.470061,165.466696 114.5,161.436554 114.5,156.465123 L114.5,94.1245778 L114.500001,94.124573 C128.926988,89.9431988 139,80.4463052 139,69.4000871 C139,58.4819296 129.15919,49.0773816 115,44.8231646 L115,60.4024631 C115,65.3717136 110.970061,69.4000871 106.004407,69.4000871 L90.9955928,69.4000871 C86.0274641,69.4000871 82,65.3754308 82,60.4024631 L82,44.5333043 Z" id="Rectangle-10" fill="#9C9797" sketch:type="MSShapeGroup" transform="translate(98.000000, 105.000000) rotate(-330.000000) translate(-98.000000, -105.000000) "></path>
+        </g>
+    </g>
+</svg>
