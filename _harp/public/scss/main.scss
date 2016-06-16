@@ -23,6 +23,7 @@ nav {
   height: 70px; /* in px for ensuring smooth scroll stops at the correct point */
   background-color: orange;
   width: 100%;
+  z-index: 5;
 
   img {
     height: 100%;
