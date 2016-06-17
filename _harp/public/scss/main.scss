@@ -29,7 +29,7 @@ nav {
     height: 100%;
     float: left;
   }
-  
+
   ul {
     margin: 0 70px;
     height: 100%;
@@ -61,12 +61,12 @@ nav {
   background-color: red;
 }
 
-section {
+.section {
   padding: 2% 2%;
   background-color: lightblue;
 }
 
-section:nth-of-type(odd) {
+.section:nth-of-type(odd) {
   background-color: lightgreen;
 }
 
@@ -155,7 +155,7 @@ h3 {
 
 /* prev - w:202px, h: 216px*/
 .howWeWork-elements {
-  width: 90.9px; 
+  width: 90.9px;
   height: 97.2px;
 }
 
@@ -194,3 +194,17 @@ h3 {
 	100% {-webkit-transform: rotate(0deg);}
 }
 
+.slider {
+    width: 50%;
+    margin: auto;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+.slick-slide.portfolContainer {
+  margin: auto;
+  width: 30%;
+}
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
