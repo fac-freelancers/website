@@ -34,6 +34,7 @@ nav {
     margin: 0 70px;
     height: 100%;
     list-style-type: none;
+    font-size: 0;
 
     li {
       display: inline-block;
@@ -42,7 +43,7 @@ nav {
         text-decoration: none;
         color: #444;
         padding: 0 .625em;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         line-height: 70px;
       }
     }
