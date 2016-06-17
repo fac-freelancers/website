@@ -61,12 +61,12 @@ nav {
   background-color: red;
 }
 
-section {
+.section {
   padding: 2% 2%;
   background-color: lightblue;
 }
 
-section:nth-of-type(odd) {
+.section:nth-of-type(odd) {
   background-color: lightgreen;
 }
 
