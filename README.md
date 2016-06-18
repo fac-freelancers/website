@@ -2,6 +2,10 @@
 
 A website for the founders and coders freelance agency
 
+Check it out here: http://fac-freelancers.github.io/website/
+
+Any feedback is appreciated. Raise us an issue if you see an area which could be improved.
+
 ### Quick start
 
 To get started run:
@@ -20,7 +24,7 @@ Ensure you have harp installed:
 
 Check with: `harp --version`
 
-If not, install with:
+If you don't have it installed, install it with:
 
 `npm i -g harp`
 
@@ -42,17 +46,13 @@ After editing `cd` to outside of the `_harp` directory and run `_harp/build.sh`
 
 ##### Developing
 
-Ignore all the files in the root, they are compiled by harp.
-
-Any changes made outside of the `_harp` directory will be removed on compile.
+Again, ignore all the files in the root, they are compiled by harp.
 
 The files to edit can all be found in the `_harp` and the `_harp/public` directory
 
-After developing run the build.sh script in the `_harp` directory to compile your changes, run:
+After developing run the `build.sh` script in the `_harp` directory to compile your changes, run:
 
 `_harp/build.sh`
-
-(this will open your index.html in browser or you can do it manually with: `open index.html`)
 
 ##### Rules for developing
 
