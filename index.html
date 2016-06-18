@@ -239,7 +239,24 @@
 
   <span id="contact"></span>
   <section class="contact section">
-    <h2> CONTACT </h2>
+    <h1>Get In Touch</h1>
+
+<form id="form">
+  <span>Your Name: </span><input id="name" type="text">
+  <span>Your Email: </span><input id="email" type="text">
+  <span>Website: </span><input id="website" type="text">
+  <span>Approx Budget: </span>
+  <select id="budget">
+    <option value="select one" selected="selected">Select One</option>
+    <option value="1000"> less than £1000 </option>
+    <option value="1000-2000"> £1000 - £2000 </option>
+    <option value="2000-5000"> £2000 - £5000 </option>
+    <option value="5000"> greater than £5000 </option>
+  </select>
+  <span>Message: </span><textarea id="message"></textarea>
+  <input button id="sendEmail" type="button" value="Submit">
+</form>
+
   </section>
 </main>
     <footer>
@@ -259,5 +276,6 @@
   <script src="./js/jquery-2.2.0-min.js"></script>
   <script src="./js/slick.js"></script>
   <script src="./js/slick-init.js"></script>
+  <script src="./js/contact-us-request.js"></script>
 </html>
 
