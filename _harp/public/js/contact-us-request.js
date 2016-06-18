@@ -1,18 +1,16 @@
 (function () {
-  var info = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    website: document.getElementById('website').value,
-    budget: document.getElementById('budget').value,
-    message: document.getElementById('message').value
-  };
-
-  console.log(info.name, info.email, info.website, info.budget, info.message);
-
   var button = document.getElementById('sendEmail');
 
   button.addEventListener('click', function (e) {
     e.preventDefault();
+    var info = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      website: document.getElementById('website').value,
+      budget: document.getElementById('budget').value,
+      message: document.getElementById('message').value
+    };
+
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
       if(xhr.readyState === 4 && xhr.status === 200) {
