@@ -1,0 +1,26 @@
+{
+  "mind-aid": {
+    "img": "./img/portfolio/mind-aid-screen-shot.png",
+    "link": "http://mindaid.herokuapp.com/"
+  },
+  "how-am-i-doing": {
+    "img": "./img/portfolio/how-am-i-doing-screen-shot.png",
+    "link": "https://howamidoing.herokuapp.com/"
+  },
+  "share-plan": {
+    "img": "./img/portfolio/share-plan-screen-shot.png",
+    "link": "https://annafreudshareplan.herokuapp.com/"
+  },
+  "hub1": {
+    "img": "https://cloud.githubusercontent.com/assets/14013616/15903079/db98632a-2da2-11e6-9de0-7d645812516e.gif",
+    "link": "https://github.com/FAC7/anna-freud-hub"
+  },
+  "hub2": {
+    "img": "https://cloud.githubusercontent.com/assets/14013616/15903085/df625bdc-2da2-11e6-9af1-f960590586ab.gif",
+    "link": "https://github.com/FAC7/anna-freud-hub"
+  },
+  "hub3": {
+    "img": "https://cloud.githubusercontent.com/assets/14013616/15903092/e7db0b74-2da2-11e6-88a8-0146a6e9dd41.gif",
+    "link": "https://github.com/FAC7/anna-freud-hub"
+  }
+}
