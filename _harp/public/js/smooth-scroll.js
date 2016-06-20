@@ -282,17 +282,12 @@
    * @returns {Number}
    */
   var getEndLocation = function ( anchor, headerHeight, offset ) {
-    var location = 0;
-    if (anchor.offsetParent) {
-      do {
-        location += anchor.offsetTop;
-        anchor = anchor.offsetParent;
-      } while (anchor);
-    }
+    var location = anchor.getBoundingClientRect().top + window.scrollY;
+    // ^^ change from the source code for mozilla differences
     location = Math.max(location - headerHeight - offset, 0);
     return Math.min(location, getDocumentHeight() - getViewportHeight());
   };
-  
+
   /**
    * Determine the viewport's height
    * @private
