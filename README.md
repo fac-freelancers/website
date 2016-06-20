@@ -10,7 +10,7 @@ Any feedback is appreciated. Raise us an issue if you see an area which could be
 
 To get started run:
 
-`git clone https://github.com/fac-freelancers/website.git && cd website`
+`git clone https://github.com/foundersandcoders/freelance-website.git && cd freelance-website`
 
 To see the current state of the site simply run:
 
