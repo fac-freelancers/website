@@ -157,8 +157,8 @@ h3 {
 
 /* prev - w:202px, h: 216px*/
 .howWeWork-elements {
-  width: 90.9px;
-  height: 97.2px;
+  /* width: 90.9px; height: 97.2px; */
+  margin: 5%;
 }
 
 #howWeWorkContContainer {
@@ -177,8 +177,11 @@ h3 {
 }
 
 .enlarged {
-  width: 151.5px;
-  height: 162px;
+  /*width: 151.5px; height: 162px;*/
+}
+
+.enlargedWrapper {
+  margin-bottom: 26%;
 }
 
 #howWeWorkContContainer {
