@@ -1,13 +1,13 @@
 (function () {
-  const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
-  const footerHeight = document.getElementsByTagName('footer')[0].clientHeight;
-  const windowHeight = window.innerHeight;
+  var navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+  var footerHeight = document.getElementsByTagName('footer')[0].clientHeight;
+  var windowHeight = window.innerHeight;
 
-  const sections = Array.from(document.getElementsByClassName('section'));
+  var sections = document.getElementsByClassName('section');
 
   sections[0].style.marginTop = navHeight + 'px';
 
-  sections.forEach(function (el) {
+  [].forEach.call(sections, function (el) {
     el.style.height = (windowHeight - navHeight) + 'px';
   });
 
