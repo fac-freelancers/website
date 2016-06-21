@@ -4,17 +4,18 @@
 
   const sectionHeight = windowHeight - navBarHeight;
 
-  const navList = Array.from(document.getElementsByTagName('li'));
+  const navList = document.getElementsByTagName('li');
 
   function findSelectedEl(tagElementList) {
-    return tagElementList.map(function (el) {
-      return Array.from(el.classList).indexOf('liSelected');
-    }).indexOf(0);
+    for(var i = 0; i < tagElementList.length - 1; i++) {
+      if(tagElementList[i].classList.contains('liSelected')) break;
+    }
+    return i;
   }
 
   function changeHighlightedNav() {
-    if (Math.floor(window.scrollY / sectionHeight) !== findSelectedEl(navList)) {
-      navList.forEach(function (el) {
+    if(Math.floor(window.scrollY / sectionHeight) !== findSelectedEl(navList)) {
+      [].forEach.call(navList, function (el) {
         el.classList.remove('liSelected');
       });
       navList[Math.floor(window.scrollY / sectionHeight)].classList.add('liSelected');

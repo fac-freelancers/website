@@ -3,11 +3,11 @@
   const footerHeight = document.getElementsByTagName('footer')[0].clientHeight;
   const windowHeight = window.innerHeight;
 
-  const sections = Array.from(document.getElementsByClassName('section'));
+  const sections = document.getElementsByClassName('section');
 
   sections[0].style.marginTop = navHeight + 'px';
 
-  sections.forEach(function (el) {
+  [].forEach.call(sections, function (el) {
     el.style.height = (windowHeight - navHeight) + 'px';
   });
 
