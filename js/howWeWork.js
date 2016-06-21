@@ -1,9 +1,9 @@
 (function () {
-  const howWeWorkIcons = document.getElementsByClassName('howWeWorkEl');
+  var howWeWorkIcons = document.getElementsByClassName('howWeWorkEl');
 
-  const howWeWorkCont = document.getElementsByClassName('howWeWorkContent');
+  var howWeWorkCont = document.getElementsByClassName('howWeWorkContent');
 
-  const howWeWorkSvgs = document.getElementsByClassName('howWeWork-elements');
+  var howWeWorkSvgs = document.getElementsByClassName('howWeWork-elements');
 
   function changeContent(i) {
     [].forEach.call(howWeWorkCont, function (cont) {

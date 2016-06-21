@@ -1,10 +1,10 @@
 (function () {
-  const windowHeight = window.innerHeight;
-  const navBarHeight = document.getElementsByTagName('nav')[0].clientHeight;
+  var windowHeight = window.innerHeight;
+  var navBarHeight = document.getElementsByTagName('nav')[0].clientHeight;
 
-  const sectionHeight = windowHeight - navBarHeight;
+  var sectionHeight = windowHeight - navBarHeight;
 
-  const navList = document.getElementsByTagName('li');
+  var navList = document.getElementsByTagName('li');
 
   function findSelectedEl(tagElementList) {
     for(var i = 0; i < tagElementList.length - 1; i++) {
