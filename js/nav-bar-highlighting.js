@@ -1,28 +1,61 @@
 (function () {
   var windowHeight = window.innerHeight;
-  var navBarHeight = document.getElementsByTagName('nav')[0].clientHeight;
+  var menuBarHeight = document.querySelector('.menu').clientHeight;
+  var sectionHeight = windowHeight - menuBarHeight;
 
-  var sectionHeight = windowHeight - navBarHeight;
+  var menu = document.querySelector('.menu');
+  var menuItems = document.querySelectorAll('.menu__item');
 
-  var navList = document.getElementsByTagName('li');
-
-  function findSelectedEl(tagElementList) {
-    for(var i = 0; i < tagElementList.length - 1; i++) {
-      if(tagElementList[i].classList.contains('liSelected')) break;
-    }
-    return i;
+  function getSelectedIndex() {
+    var selected = document.querySelector('.menu__item .liSelected');
+    return [].indexOf.call(menuItems, selected);
   }
 
-  function changeHighlightedNav() {
-    if(Math.floor(window.scrollY / sectionHeight) !== findSelectedEl(navList)) {
-      [].forEach.call(navList, function (el) {
+  function deselectItems(){
+    [].forEach.call(menuItems, function(el) {
         el.classList.remove('liSelected');
-      });
-      navList[Math.floor(window.scrollY / sectionHeight)].classList.add('liSelected');
-    }
+    });
   }
 
-  window.addEventListener('scroll', changeHighlightedNav);
+  function selectItem(item){
+    deselectItems();
+    item.classList.add('liSelected');
+  }
 
-  navList[0].classList.add('liSelected');
+  (function(){
+    var timeout;
+    var clickScroll;
+
+    clickScroll = false;
+
+    function setClickScrolling(e){
+      var target = e.currentTarget;
+
+      if (target.classList.contains('menu__item')){
+        selectItem(target);
+
+        clickScroll = true;
+        clearTimeout(timeout);
+        timeout = setTimeout(function(){
+          clickScroll = false;
+        }, 1700);
+      }
+    };
+
+    [].forEach.call(menuItems, function(item){
+      item.addEventListener('click', setClickScrolling);
+    });
+
+    function changeHighlightedMenuItem(){
+      var currentSection = getSelectedIndex();
+      var nextSection = Math.floor(window.scrollY / sectionHeight);
+
+      if(!clickScroll && nextSection !== currentSection) {
+        selectItem(menuItems[nextSection]);
+      }
+    };
+
+    window.addEventListener('scroll', changeHighlightedMenuItem);
+  }());
+
 }());
