@@ -44,5 +44,4 @@
   };
 
   window.addEventListener('wheel', changeHighlightedMenuItem);
-
 }());
