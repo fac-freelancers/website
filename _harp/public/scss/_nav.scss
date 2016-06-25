@@ -1,8 +1,8 @@
 nav {
   position: fixed;
   margin: auto;
-  height: 70px; /* in px for ensuring smooth scroll stops at the correct point */
-  background-color: orange;
+  height: $nav-height; /* in px for ensuring smooth scroll stops at the correct point */
+  background-color: $dark-green;
   width: 100%;
   z-index: 5;
 
@@ -12,7 +12,7 @@ nav {
   }
 
   ul {
-    margin: 0 70px;
+    margin: 0 $nav-height;
     height: 100%;
     list-style-type: none;
     font-size: 0;
@@ -22,10 +22,10 @@ nav {
 
       a {
         text-decoration: none;
-        color: #444;
+        color: $vLight-green;
         padding: 0 .625em;
         font-size: 1.5rem;
-        line-height: 70px;
+        line-height: $nav-height;
         display: block;
       }
     }
@@ -33,7 +33,7 @@ nav {
     li:hover {
       transition-delay: 0.6s;
       transition: all 1.2s ease;
-      background-color: red;
+      background-color: $vDark-green;
     }
   }
 }
@@ -41,14 +41,5 @@ nav {
 .liSelected {
   transition-delay: 0.6s;
   transition: all 1.2s ease;
-  background-color: red;
-}
-
-.section {
-  padding: 2% 2%;
-  background-color: lightblue;
-}
-
-.section:nth-of-type(odd) {
-  background-color: lightgreen;
+  background-color: $vDark-green;
 }

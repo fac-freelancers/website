@@ -1,13 +1,14 @@
 footer {
-  height: 70px;
-  background-color: lightblue;
+  height: $footer-height;
+  background-color: $vDark-green;
 
   p {
+    color: $vLight-green;
     margin: 0;
     padding: 0;
     float: left;
     width: 25%;
     text-align: center;
-    line-height: 70px;
+    line-height: $footer-height;
   }
 }
