@@ -54,6 +54,14 @@ After developing run the `build.sh` script in the `_harp` directory to compile y
 
 `_harp/build.sh`
 
+##### Conventions
+
+CSS/SCSS: Follow the SMACSS architecture as described here: https://smacss.com/
+
+JS: Described in the `.eslintrc` file. To check that your files follow this convention ensure you have eslint installed and run:
+
+`eslint *`
+
 ##### Rules for developing
 
 * Before you start any work, find an issue to work on or create one if you see an improvement to be made
@@ -61,3 +69,7 @@ After developing run the `build.sh` script in the `_harp` directory to compile y
 * When you start working on an issue add the 'in-progress' label to it
 
 * Only make a pull request to master if it closes an issue
+
+* Ensure your changes conform to the conventions above
+
+* Check your javascript is conforming to the linter by running `eslint *`
