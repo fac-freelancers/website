@@ -16,9 +16,11 @@
     [].forEach.call(howWeWorkCont, function (cont) {
       if(!cont.classList.contains('hidden')) {
         cont.classList.add('hidden');
+        cont.classList.remove('showing');
       }
     });
     howWeWorkCont[i].classList.remove('hidden');
+    howWeWorkCont[i].classList.add('showing');
   }
 
   function enlargeIcon(i) {
