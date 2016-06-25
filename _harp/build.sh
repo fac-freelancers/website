@@ -17,4 +17,3 @@ if [[ $files == *"build.sh"* ]]; then
 else
   echo "cannot find script! cd website !";
 fi
-
