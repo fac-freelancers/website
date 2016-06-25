@@ -22,40 +22,27 @@
     item.classList.add('liSelected');
   }
 
-  (function(){
-    var timeout;
-    var clickScroll;
+  function setClickScrolling(e){
+    var target = e.currentTarget;
 
-    clickScroll = false;
+    if (target.classList.contains('menu__item')){
+      selectItem(target);
+    }
+  };
 
-    function setClickScrolling(e){
-      var target = e.currentTarget;
+  [].forEach.call(menuItems, function(item){
+    item.addEventListener('click', setClickScrolling);
+  });
 
-      if (target.classList.contains('menu__item')){
-        selectItem(target);
+  function changeHighlightedMenuItem(){
+    var currentSection = getSelectedIndex();
+    var nextSection = Math.floor(window.scrollY / sectionHeight);
 
-        clickScroll = true;
-        clearTimeout(timeout);
-        timeout = setTimeout(function(){
-          clickScroll = false;
-        }, 1700);
-      }
-    };
+    if(nextSection !== currentSection) {
+      selectItem(menuItems[nextSection]);
+    }
+  };
 
-    [].forEach.call(menuItems, function(item){
-      item.addEventListener('click', setClickScrolling);
-    });
-
-    function changeHighlightedMenuItem(){
-      var currentSection = getSelectedIndex();
-      var nextSection = Math.floor(window.scrollY / sectionHeight);
-
-      if(!clickScroll && nextSection !== currentSection) {
-        selectItem(menuItems[nextSection]);
-      }
-    };
-
-    window.addEventListener('scroll', changeHighlightedMenuItem);
-  }());
+  window.addEventListener('wheel', changeHighlightedMenuItem);
 
 }());
