@@ -20,9 +20,17 @@ body {
   height: 100%;
   font-family: "futura";
   text-align: center;
-  background: #f4f4f7;
   color: #444;
   display: inline;
+}
+
+.section {
+  padding: 2% 2%;
+  background-color: $light-green;
+}
+
+.section:nth-of-type(odd) {
+  background-color: $vLight-green;
 }
 
 h1 {
