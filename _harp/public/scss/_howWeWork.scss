@@ -5,29 +5,26 @@
   float: left;
 }
 
-/* prev - w:202px, h: 216px*/
+/* original dimensions - w:202px, h: 216px*/
 .howWeWork-elements {
-  /* width: 90.9px; height: 97.2px; */
   margin: 5%;
 }
 
 #howWeWorkContContainer {
   width: 50%;
   height: 80%;
-}
+  .howWeWorkContent {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    p {
+      font-size: 140%;
+    }
+  }
 
-.howWeWorkContent {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.enlarged {
-  /*width: 151.5px; height: 162px;*/
+  .hidden {
+    visibility: hidden;
+  }
 }
 
 .enlargedWrapper {
