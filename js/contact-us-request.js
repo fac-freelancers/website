@@ -1,4 +1,5 @@
 (function () {
+  'use strict';
   var button = document.getElementById('sendEmail');
 
   button.addEventListener('click', function (e) {
@@ -13,11 +14,10 @@
 
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
-      if(xhr.readyState === 4 && xhr.status === 200) {
+      if (xhr.readyState === 4 && xhr.status === 200)
         console.log('response is: ' + xhr.responseText);
-      }
     };
     xhr.open('get', 'http://factree-api.herokuapp.com/mail/' + JSON.stringify(info));
     xhr.send();
   });
-}());
+})();
