@@ -1,4 +1,4 @@
-nav {
+.menu {
   position: fixed;
   margin: auto;
   height: $nav-height; /* in px for ensuring smooth scroll stops at the correct point */
@@ -6,40 +6,62 @@ nav {
   width: 100%;
   z-index: 5;
 
-  img {
-    height: 100%;
-    float: left;
-  }
-
   ul {
-    margin: 0 $nav-height;
-    height: 100%;
+    background-color: $dark-green;
+    margin: 0;
+    padding: $nav-height 0 0;
     list-style-type: none;
     font-size: 0;
+    transition: all 1.2s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: $nav-height;
+  }
 
-    li {
-      display: inline-block;
-
-      a {
-        text-decoration: none;
-        color: $vLight-green;
-        padding: 0 .625em;
-        font-size: 1.5rem;
-        line-height: $nav-height;
-        display: block;
-      }
-    }
-
-    li:hover {
-      transition-delay: 0.6s;
-      transition: all 1.2s ease;
-      background-color: $vDark-green;
-    }
+  &.menu--open ul{
+    transform: translate3d(0, 100%, 0);
   }
 }
 
-.liSelected {
-  transition-delay: 0.6s;
-  transition: all 1.2s ease;
-  background-color: $vDark-green;
+  .menu__logo {
+    height: $nav-height;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+  }
+
+  .menu__item {
+    transition-delay: 0.6s;
+    transition: all 1.2s ease;
+
+    a {
+      text-decoration: none;
+      color: $vLight-green;
+      padding: 0 .625em;
+      font-size: 1.5rem;
+      line-height: $nav-height;
+      display: block;
+    }
+
+    &.menu__item--selected, &:hover {
+      background-color: $vDark-green;
+    }
+  }
+
+@media screen and (min-width: $bp-tablet){
+  .menu {
+    ul {
+      margin: 0 $nav-height;
+      padding: 0;
+      position: initial;
+    }
+    &.menu--open ul {
+      transform: initial;
+    }
+  }
+
+    .menu__item {
+      display: inline-block;
+    }
 }

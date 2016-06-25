@@ -4,22 +4,23 @@
   var sectionHeight = windowHeight - menuBarHeight;
 
   var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu__logo');
   var menuItems = document.querySelectorAll('.menu__item');
 
   function getSelectedIndex() {
-    var selected = document.querySelector('.menu__item .liSelected');
+    var selected = document.querySelector('.menu__item.menu__item--selected');
     return [].indexOf.call(menuItems, selected);
   }
 
   function deselectItems(){
     [].forEach.call(menuItems, function(el) {
-        el.classList.remove('liSelected');
+        el.classList.remove('menu__item--selected');
     });
   }
 
   function selectItem(item){
     deselectItems();
-    item.classList.add('liSelected');
+    item.classList.add('menu__item--selected');
   }
 
   function setClickScrolling(e){
@@ -44,4 +45,11 @@
   };
 
   window.addEventListener('wheel', changeHighlightedMenuItem);
+
+  // FIXME: Maybe this should be in other file
+  function toggleMenu(){
+    menu.classList.toggle('menu--open');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
 }());
