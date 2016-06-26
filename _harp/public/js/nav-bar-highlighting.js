@@ -8,8 +8,8 @@
   var menuBtn = document.querySelector('.menu__logo');
   var menuItems = document.querySelectorAll('.menu__item');
 
-  function getSelectedIndex () {
-    var selected = document.querySelector('.menu__item.menu__item--selected');
+  function getSelectedSection () {
+    var selected = document.querySelector('.menu__item--selected');
     return [].indexOf.call(menuItems, selected);
   }
 
@@ -35,11 +35,32 @@
     item.addEventListener('click', setClickScrolling);
   });
 
-  function changeHighlightedMenuItem () {
-    var currentSection = getSelectedIndex();
-    var nextSection = Math.floor(window.scrollY / sectionHeight);
+  var getScrollDirection = (function () {
+    var lastScrollY = 0;
 
-    if (nextSection !== currentSection)
+    return function () {
+      var direction = lastScrollY - window.scrollY < 0 ? 'down' : 'up';
+      lastScrollY = window.scrollY;
+      return direction;
+    };
+  })();
+
+  function getNextSection () {
+    var currentSection = getSelectedSection();
+    var direction = getScrollDirection();
+    var affinity = 0.5;
+    var nextSection = Math.floor((window.scrollY + affinity * sectionHeight) / sectionHeight);
+
+    if (direction === 'up' && nextSection > currentSection
+        || direction === 'down' && nextSection < currentSection)
+      nextSection = currentSection;
+    return nextSection;
+  }
+
+  function changeHighlightedMenuItem () {
+    var currentSection = getSelectedSection();
+    var nextSection = getNextSection();
+    if (currentSection !== nextSection)
       selectItem(menuItems[nextSection]);
   };
 
